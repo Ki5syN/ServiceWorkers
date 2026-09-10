@@ -1,11 +1,13 @@
-const FETCH_PRIORITY_URLS = ['/', '/index.html', '/style.css','./app.js'];
+const FETCH_PRIORITY_URLS = ['/', '/index.html', '/style.css','/js/app.js'];
+const CACHE_NAME = 'my-best-cache'
+
 
 self.addEventListener('install', (event) => {
   console.log('Установлен');
   event.waitUntil(
-    caches.open('my-best-cache')
+    caches.open(CACHE_NAME)
       .then((cache) => {
-        cache.addAll(FETCH_PRIORITY_URLS)
+        return cache.addAll(FETCH_PRIORITY_URLS)
       })
       .then(() => self.skipWaiting())    
   )

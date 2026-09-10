@@ -38,12 +38,12 @@ fetchNews ()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/serwer-worker.js')
+    navigator.serviceWorker.register('/server-worker.js')
       .then((registration) => {
-        console.log('✅ Service Worker успешно зарегистрирован в области:', registration.scope);
+        console.log('✅ Server Worker успешно зарегистрирован в области:', registration.scope);
       })
       .catch((error) => {
-        console.error('❌ Ошибка регистрации Service Worker:', error);
+        console.error('❌ Ошибка регистрации Server Worker:', error);
       });
   });
 }
