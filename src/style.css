@@ -15,7 +15,7 @@ body {
   justify-content: center;
 }
 
-.widget {  
+.widget {
   display: flex;
   flex-direction: column;
   width: 700px;
@@ -30,24 +30,33 @@ body {
   border-top-width: 20px;
 }
 
-.plug, .news, .error-massage {
+.plug,
+.news,
+.error-massage {
   display: none;
 }
 
-.state-loading .plug { display: block; }
-.state-success .news { display: block; }
-.state-error .error-massage { display: flex; }
+.state-loading .plug {
+  display: block;
+}
+.state-success .news {
+  display: block;
+}
+.state-error .error-massage {
+  display: flex;
+}
 
-
-.plug, .news, .error-massage {
-  position: relative; 
+.plug,
+.news,
+.error-massage {
+  position: relative;
   width: 450px;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
   border: 2px solid #3c454e;
-  background: #ffffff;  
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .error-massage {
@@ -58,35 +67,38 @@ body {
   height: 400px;
 }
 
-.error-massage__text-check{
+.error-massage__text-check {
   width: 177px;
   text-align: center;
 }
 
-.plug-card , .news-card{
+.plug-card,
+.news-card {
   display: flex;
   flex-direction: column;
 }
 
-.plug-item-group, .news-card-group{
+.plug-item-group,
+.news-card-group {
   display: flex;
-  
 }
 
-.plug-header, .news-header{
+.plug-header,
+.news-header {
   font-size: 20px;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
-.plug-item-boxnews, .text{
-  flex-grow: 1;   
+.plug-item-boxnews,
+.text {
+  flex-grow: 1;
   padding: 5px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
-.plug-item { 
+.plug-item {
   height: 22px;
   background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
   background-size: 200% 100%;
@@ -94,41 +106,56 @@ body {
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
-.title {  
+.title {
   width: 60%;
   margin-bottom: 10px;
 }
 
-.text, .plug-text {
- display: block;
- width: 100%;
-
+.text,
+.plug-text {
+  display: block;
+  width: 100%;
 }
 
 .plug-text {
-   margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.avatar{
+.avatar {
   width: 70px;
-  height: 56px; 
+  height: 56px;
 }
 
 .plug-avatar {
   width: 55px;
-  height: 55px; 
+  height: 55px;
 }
 
-.avatar{
+.avatar {
   border: 1px solid #3c454e;
   border-radius: 5px;
-  background: 
-    linear-gradient(to bottom right, transparent calc(50% - 1px), #3c454e calc(50% - 1px), #3c454e calc(50% + 1px), transparent calc(50% + 1px)),
-    linear-gradient(to bottom left,  transparent calc(50% - 1px), #3c454e calc(50% - 1px), #3c454e calc(50% + 1px), transparent calc(50% + 1px))
+  background: linear-gradient(
+      to bottom right,
+      transparent calc(50% - 1px),
+      #3c454e calc(50% - 1px),
+      #3c454e calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(
+      to bottom left,
+      transparent calc(50% - 1px),
+      #3c454e calc(50% - 1px),
+      #3c454e calc(50% + 1px),
+      transparent calc(50% + 1px)
+    );
 }
 
 .error-box {
@@ -139,19 +166,15 @@ body {
   text-align: center;
 }
 
-.refresh {   
-  position: absolute; 
+.refresh {
+  position: absolute;
   top: 0;
   right: 0;
   border: none;
-  margin: 20px; 
+  margin: 20px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
   background-color: transparent;
 }
-
-
-
-
